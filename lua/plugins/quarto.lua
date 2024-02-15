@@ -16,9 +16,26 @@ return {
     {
         "quarto-dev/quarto-nvim",
 
+        dependencies = {
+            "neovim/nvim-lspconfig",
+            "hrsh7th/nvim-cmp",
+            "nvim-treesitter/nvim-treesitter",
+            "jmbuhr/otter.nvim",
+        },
+
         opts = {
             lspFeatures = {
                 languages = { "r", "python", "julia", "bash", "html", "lua" },
+            },
+            keymap = {
+                hover = "K", -- default
+                definition = "gd", -- default
+                type_definition = "gD", -- default
+                -- rename = "<leader>lR", -- default
+                rename = "<leader>cr",
+                -- format = "<leader>lf", -- default
+                references = "gr", -- default
+                document_symbols = "gS", -- default
             },
         },
 
@@ -128,42 +145,41 @@ return {
     },
 
     -- {
-    --   "nvim-treesitter/nvim-treesitter",
-    --   opts = {
-    --     ensure_installed = {
-    --       "bash",
-    --       "c",
-    --       "html",
-    --       "javascript",
-    --       "json",
-    --       "lua",
-    --       "luadoc",
-    --       "luap",
-    --       "markdown",
-    --       "markdown_inline",
-    --       "python",
-    --       "query",
-    --       "regex",
-    --       "tsx",
-    --       "typescript",
-    --       "vim",
-    --       "vimdoc",
-    --       "yaml",
-    --       "bash",
-    --       "html",
-    --       "css",
-    --       "javascript",
-    --       "json",
-    --       "lua",
-    --       "markdown",
-    --       "markdown_inline",
-    --       "python",
-    --       "vim",
-    --       "yaml",
-    --       "python",
-    --       "julia",
-    --       "r",
+    --     "nvim-treesitter/nvim-treesitter",
+    --     opts = {
+    --         ensure_installed = {
+    --             "bash",
+    --             "c",
+    --             "cpp",
+    --             "css",
+    --             "git_config",
+    --             "gitcommit",
+    --             "gitignore",
+    --             "glsl",
+    --             "html",
+    --             "kdl",
+    --             "json",
+    --             "java",
+    --             "javascript",
+    --             "julia",
+    --             "latex",
+    --             "lua",
+    --             "luadoc",
+    --             "luap",
+    --             "markdown",
+    --             "markdown_inline",
+    --             "norg",
+    --             "org",
+    --             "python",
+    --             "query",
+    --             "r",
+    --             "regex",
+    --             "tsx",
+    --             "typescript",
+    --             "vim",
+    --             "vimdoc",
+    --             "yaml",
+    --         },
     --     },
-    --   },
     -- },
 }
