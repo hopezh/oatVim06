@@ -6,7 +6,6 @@ Create map for Japan Typhoon data from 1951 to 2023.
 
 ::: {.column-screen}
 
-
 # import modules ---------------------------------------------------------------
 ```{python}
 import polars as pl
