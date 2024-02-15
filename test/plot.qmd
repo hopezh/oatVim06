@@ -1,0 +1,54 @@
+---
+title: "create map"
+---
+
+Create map for Japan Typhoon data from 1951 to 2023.
+
+::: {.column-screen}
+
+
+# import modules ---------------------------------------------------------------
+```{python}
+import polars as pl
+pl.Config.set_tbl_rows(7)   # limit num of lines for table preview
+import plotly.express as px
+```
+
+
+# read df parquet --------------------------------------------------------------
+```{python}
+%%time
+
+df_parquet_f_path = "./data/df.parquet"
+df = pl.read_parquet(df_parquet_f_path)
+df
+```
+
+# filter data by year ----------------------------------------------------------
+
+
+# create map -------------------------------------------------------------------
+```{python}
+fig = px.line_mapbox(
+    df,
+    lat="d_d_latitude",     # or, lat=df["d_d_latitude"]
+    lon="d_e_longitude",
+    color="h_b_int_num_id",
+    zoom=3,
+    height=1200,
+    # animation_frame=df["h_b_int_num_id"]  # option 1
+    # animation_frame="h_b_int_num_id"      # option 2
+)
+
+fig.update_layout(
+    # mapbox_style="open-street-map",
+    mapbox_style="carto-darkmatter",
+    # mapbox_zoom=4,
+    mapbox_center_lat=36,
+    margin={"r":0,"t":0,"l":0,"b":0},
+)
+
+fig.show()
+```
+
+:::
