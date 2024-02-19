@@ -20,7 +20,7 @@ return {
             comments = { italic = true },
             keywords = { italic = true },
             functions = { bold = true },
-            -- variables = { italic = true },
+            variables = { italic = true },
 
             -- Background styles. Can be "dark", "transparent" or "normal"
             sidebars = "transparent", -- style for sidebars, see below
