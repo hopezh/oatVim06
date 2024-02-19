@@ -19,8 +19,8 @@ return {
             -- Value is any valid attr-list value for `:help nvim_set_hl`
             comments = { italic = true },
             keywords = { italic = true },
-            functions = { italic = true },
-            variables = { bold = true },
+            functions = { bold = true },
+            -- variables = { italic = true },
 
             -- Background styles. Can be "dark", "transparent" or "normal"
             sidebars = "transparent", -- style for sidebars, see below
@@ -51,6 +51,7 @@ return {
             highlights.CursorLineNr = {
                 fg = "#ffff00", -- set cursorline number highlight color
                 bg = colors.bg_highlight, -- extend cursorline hl bg color to line number
+                italic = true,
             }
         end,
     },
