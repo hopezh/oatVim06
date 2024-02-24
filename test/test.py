@@ -2,7 +2,7 @@ from dash import Dash, html, dcc, callback, Output, Input
 import plotly.express as px
 import pandas as pd
 
-# read csv file
+# o: read csv file
 df = pd.read_csv(
     "https://raw.githubusercontent.com/plotly/datasets/master/gapminder_unfiltered.csv"
 )
@@ -16,7 +16,7 @@ c =3
 # init app
 app = Dash(__name__)
 
-# define app layout
+# o: define app layout
 app.layout = html.Div(
     [
         html.H1(children="Title of Dash App", style={"textAlign": "center"}),
@@ -25,7 +25,7 @@ app.layout = html.Div(
     ]
 )
 
-# define callback func
+# o: define callback func
 @callback(
     Output("graph-content", "figure"),
     Input("dropdown-selection", "value")
@@ -58,6 +58,6 @@ class Dog:
         buddy.buddy = self
 
 
-# run app
+# o: run app
 if __name__ == "__main__":
     app.run(debug=True)
