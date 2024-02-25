@@ -7,4 +7,17 @@ return {
     },
 
     opts = {},
+
+    keys = {
+        {
+            "<leader>dv",
+            "<cmd>DataViewer<cr>",
+            desc = "open DataViewer",
+        },
+        {
+            "<leader>dc",
+            "<cmd>DataViewerClose<cr>",
+            desc = "close DataViewer",
+        },
+    },
 }
