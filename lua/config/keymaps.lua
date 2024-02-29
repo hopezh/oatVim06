@@ -29,14 +29,3 @@ if vim.lsp.inlay_hint then
         { desc = "Toggle inlay hints" }
     )
 end
-
--- dismiss noice messages ------------------------------------------------------
--- stylua: ignore
-vim.keymap.set(
-    'n',
-    '<leader>nd',
-    '<cmd>NoiceDismiss<CR>',
-    {
-        desc = "dismiss noice messages"
-    }
-)
