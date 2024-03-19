@@ -24,6 +24,8 @@ return {
     },
 
     config = function()
-        require("md-headers").setup()
+        require("md-headers").setup({
+            height = 40,
+        })
     end,
 }
