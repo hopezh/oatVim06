@@ -15,6 +15,8 @@ return {
     },
 
     opts = {
+        popup_border_style = "rounded",
+
         default_component_configs = {
             icon = {
                 -- folder_closed = "",
@@ -24,6 +26,7 @@ return {
                 folder_empty = "󰜌",
             },
         },
+
         window = {
             position = "float", -- opts: left, right, float
             popup = { -- settings that apply to float position only
