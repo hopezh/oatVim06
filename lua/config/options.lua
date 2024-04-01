@@ -44,3 +44,10 @@ vim.cmd([[highlight Headline2 guibg=#777777 guifg=#000000]])
 vim.cmd([[highlight Headline3 guibg=#555555 guifg=#000000]])
 vim.cmd([[highlight CodeBlock guibg=#252525]])
 vim.cmd([[highlight Dash guibg=#202020 gui=bold]])
+
+-- LazyVim automatically configures lazygit:
+--  * theme, based on the active colorscheme.
+--  * editorPreset to nvim-remote
+--  * enables nerd font icons
+-- Set to false to disable.
+vim.g.lazygit_config = false
