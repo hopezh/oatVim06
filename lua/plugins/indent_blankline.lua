@@ -24,7 +24,9 @@ return {
                 highlight = highlight,
                 remove_blankline_trail = false,
             },
-            scope = { enabled = false },
+            scope = {
+                enabled = false,
+            },
         })
     end,
 

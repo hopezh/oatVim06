@@ -1,5 +1,6 @@
 return {
     "shellRaining/hlchunk.nvim",
+    enabled = true,
 
     event = { "UIEnter" },
 
@@ -27,13 +28,31 @@ return {
                 exclude_filetypes = {
                     ["neo-tree"] = false,
                 },
+                chars = {
+                    horizontal_line = "─",
+                    vertical_line = "│",
+                    left_top = "╭",
+                    left_bottom = "╰",
+                    -- left_bottom = "└",
+                    -- right_arrow = ">",
+                    -- right_arrow = "",
+                    -- right_arrow = "",
+                    right_arrow = "",
+                },
             },
 
             indent = {
+                use_treesitter = true,
                 chars = {
                     -- "│",  -- default
+                    -- "▏",
                     " ",
                 },
+                -- style = {
+                --     {
+                --         bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Whitespace")), "fg", "gui"),
+                --     },
+                -- },
             },
 
             blank = {
