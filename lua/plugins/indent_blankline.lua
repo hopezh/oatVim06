@@ -1,6 +1,6 @@
 return {
     "lukas-reineke/indent-blankline.nvim",
-    enabled = false,
+    enabled = true,
 
     main = "ibl", -- since v3
 
@@ -26,6 +26,7 @@ return {
             },
             scope = {
                 enabled = false,
+                -- char = ":",
             },
         })
     end,
