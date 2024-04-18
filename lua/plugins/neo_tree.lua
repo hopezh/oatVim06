@@ -18,11 +18,19 @@ return {
         popup_border_style = "rounded",
 
         default_component_configs = {
+            indent = {
+                -- last_indent_marker = "└", -- default
+                last_indent_marker = "╰",
+                -- expander_collapsed = "", -- default
+                -- expander_expanded = "",  -- default
+                expander_collapsed = "",
+                expander_expanded = "",
+            },
             icon = {
-                -- folder_closed = "",
-                -- folder_open = "",
-                folder_closed = "",
-                folder_open = "",
+                folder_closed = "",
+                folder_open = "",
+                -- folder_closed = "",
+                -- folder_open = "",
                 folder_empty = "󰜌",
             },
         },
