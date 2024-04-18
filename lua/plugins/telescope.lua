@@ -8,6 +8,7 @@ return {
             layout_config = {
                 prompt_position = "top",
                 -- preview_width = 100, -- fix width of preview window
+                horizontal = { width = 0.95 },
             },
             sorting_strategy = "ascending",
             winblend = 0,
