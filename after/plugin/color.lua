@@ -1,23 +1,23 @@
 -- toggle dark/light theme -----------------------------------------------------
 -- [thanks kkafar](https://github.com/folke/tokyonight.nvim/discussions/426#discussioncomment-7102103)
 
-local function toggle_theme()
-    if vim.opt.background:get() == "dark" then
-        vim.opt.background = "light"
-    -- vim.cmd("colorscheme tokyonight-day")
-    else
-        vim.opt.background = "dark"
-        -- vim.cmd("colorscheme tokyonight-moon")
-    end
-end
+-- local function toggle_theme()
+--     if vim.opt.background:get() == "dark" then
+--         vim.opt.background = "light"
+--     -- vim.cmd("colorscheme tokyonight-day")
+--     else
+--         vim.opt.background = "dark"
+--         -- vim.cmd("colorscheme tokyonight-moon")
+--     end
+-- end
 
--- stylua: ignore
-vim.keymap.set(
-    "n",
-    "<leader>zt",
-    toggle_theme,
-    { desc = "Toggle dark/light theme" }
-)
+-- -- stylua: ignore
+-- vim.keymap.set(
+--     "n",
+--     "<leader>zt",
+--     toggle_theme,
+--     { desc = "Toggle dark/light theme" }
+-- )
 
 -- set cursorline as underline -------------------------------------------------
 -- vim.api.nvim_set_hl(0, "CursorLine", { underline = true })
@@ -34,3 +34,6 @@ vim.keymap.set(
 -- change the color of ColorColumn ---------------------------------------------
 -- !!! must disable virt-column
 vim.cmd("highlight ColorColumn ctermbg=0 guibg=#222222")
+
+-- use onedoarkpro color scheme
+vim.cmd("colorscheme onedark_dark")
