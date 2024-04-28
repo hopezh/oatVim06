@@ -3,12 +3,22 @@ return {
 
     keys = {
         {
-            "<leader>e",
+            "<leader>tj",
+            "<cmd>Neotree filesystem reveal left<cr>",
+            desc = "open neotree",
+        },
+        {
+            "<leader>tk",
             "<cmd>Neotree filesystem reveal float<cr>",
             desc = "open neotree",
         },
         {
-            "<leader>b",
+            "<leader>tl",
+            "<cmd>Neotree filesystem reveal right<cr>",
+            desc = "open neotree",
+        },
+        {
+            "<leader>tb",
             "<cmd>Neotree buffers reveal float<cr>",
             desc = "open buffers",
         },
@@ -37,7 +47,8 @@ return {
         },
 
         window = {
-            position = "float", -- opts: left, right, float
+            -- position = "float", -- opts: left, right, float
+            -- position = "right", -- opts: left, right, float
             popup = { -- settings that apply to float position only
                 size = { height = "60", width = "100" },
                 position = "50%", -- 50% means center it

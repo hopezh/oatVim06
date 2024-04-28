@@ -79,6 +79,11 @@ return {
                     "python code chunk",
                 },
             },
+
+            -- keymap group for neo-tree
+            ["<leader>t"] = {
+                name = "Neo-tree",
+            },
         },
     },
 
