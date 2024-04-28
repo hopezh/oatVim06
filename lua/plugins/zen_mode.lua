@@ -15,7 +15,7 @@ return {
         zen.setup({
             window = {
                 backdrop = 0.9,
-                width = 100,
+                width = 120,
                 options = {
                     -- signcolumn = "no",
                     -- number = false,
