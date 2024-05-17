@@ -25,8 +25,8 @@ return {
                 remove_blankline_trail = false,
             },
             scope = {
-                -- enabled = true,
-                -- char = ":",
+                enabled = false,
+                -- char = ">",
             },
         })
     end,
