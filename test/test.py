@@ -14,7 +14,7 @@ c =3
 # fmt: on
 
 # init app
-app = Dash(__name__)
+app = Dash(__name__
 
 # o: define app layout
 app.layout = html.Div(
