@@ -1,13 +1,14 @@
 return {
     "shellRaining/hlchunk.nvim",
-    enabled = false,
+    enabled = true,
 
-    event = { "UIEnter" },
+    event = { "BufReadPre", "BufNewFile" },
 
     config = function()
         require("hlchunk").setup({
             -- my settings
             chunk = {
+                enable = true,
                 support_filetypes = {
                     "*.c",
                     "*.cpp",
@@ -42,20 +43,17 @@ return {
             },
 
             indent = {
+                enable = true,
                 use_treesitter = true,
                 chars = {
                     -- "│",  -- default
                     -- "▏",
                     " ",
                 },
-                -- style = {
-                --     {
-                --         bg = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Whitespace")), "fg", "gui"),
-                --     },
-                -- },
             },
 
             blank = {
+                enable = true,
                 chars = {
                     -- ".",  -- default
                     " ",
