@@ -38,14 +38,7 @@ opt.fileformat = "unix"
 -- vim.g.autoformat = false -- globally
 -- vim.b.autoformat = false -- buffer-local
 
--- highlight color for headlines.nvim ------------------------------------------
-vim.cmd([[highlight Headline1 guibg=#999999 guifg=#000000]])
-vim.cmd([[highlight Headline2 guibg=#777777 guifg=#000000]])
-vim.cmd([[highlight Headline3 guibg=#555555 guifg=#000000]])
-vim.cmd([[highlight CodeBlock guibg=#252525]])
-vim.cmd([[highlight Dash guibg=#202020 gui=bold]])
-
--- LazyVim automatically configures lazygit:
+-- LazyVim automatically configures lazygit: -----------------------------------
 --  * theme, based on the active colorscheme.
 --  * editorPreset to nvim-remote
 --  * enables nerd font icons
