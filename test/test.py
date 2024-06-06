@@ -14,7 +14,7 @@ c =3
 # fmt: on
 
 # init app
-app = Dash(__name__
+app = Dash(__name__)
 
 # o: define app layout
 app.layout = html.Div(
@@ -25,11 +25,9 @@ app.layout = html.Div(
     ]
 )
 
+
 # o: define callback func
-@callback(
-    Output("graph-content", "figure"),
-    Input("dropdown-selection", "value")
-)
+@callback(Output("graph-content", "figure"), Input("dropdown-selection", "value"))
 def update_graph(value):
     dff = df[df.country == value]
     return px.line(dff, x="year", y="pop")
@@ -39,8 +37,9 @@ def add(a, b):
     sum = a + b
     return sum
 
+
 class Dog:
-    def __init__(self, name, age):  
+    def __init__(self, name, age):
         self.name = name
         self.age = age
 
@@ -51,7 +50,7 @@ class Dog:
         print(self.name + " is " + str(self.age) + " year(s) old.")
 
     def birthday(self):
-        self.age +=1
+        self.age += 1
 
     def setBuddy(self, buddy):
         self.buddy = buddy
