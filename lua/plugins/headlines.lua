@@ -1,22 +1,25 @@
 return {
     "lukas-reineke/headlines.nvim",
 
+    priority = 1000,
+
     dependencies = {
         "nvim-treesitter/nvim-treesitter",
-        "folke/tokyonight.nvim",
     },
 
     config = function()
         -- highlight color for headlines.nvim ----------------------------------
-        -- vim.cmd([[highlight Headline1 guibg=#999999 guifg=#000000]])
-        vim.cmd([[highlight Headline1 guibg=#999999 guifg=#0000ff]])
+        vim.cmd([[highlight Headline1 guibg=#999999 guifg=#0000ff]]) -- not working...
         vim.cmd([[highlight Headline2 guibg=#777777 guifg=#000000]])
         vim.cmd([[highlight Headline3 guibg=#555555 guifg=#000000]])
         vim.cmd([[highlight CodeBlock guibg=#252525]])
-        vim.cmd([[highlight Dash guibg=#202020 gui=bold]])
+        vim.cmd([[highlight Dash guibg=#1010101]])
+        -- vim.cmd([[highlight Dash guibg=#ffff00 guifg=#0000ff gui=bold]])  -- test
 
         require("headlines").setup({
             quarto = {
+                headline_highlights = false,
+
                 query = vim.treesitter.query.parse(
                     "markdown",
                     [[
@@ -34,6 +37,7 @@ return {
                     "Headline2",
                     "Headline3",
                 },
+
                 codeblock_highlight = "CodeBlock",
                 dash_highlight = "Dash",
                 dash_string = "-",
@@ -43,7 +47,7 @@ return {
                 -- fat_headline_upper_string = "▃",
                 -- fat_headline_lower_string = "🬂",
                 fat_headline_upper_string = "-",
-                fat_headline_lower_string = "_",
+                fat_headline_lower_string = "",
             },
 
             markdown = {
