@@ -1,3 +1,6 @@
+-- activate a colorscheme ------------------------------------------------------
+-- vim.cmd("colorscheme neofusion")
+
 -- toggle dark/light theme -----------------------------------------------------
 -- [thanks kkafar](https://github.com/folke/tokyonight.nvim/discussions/426#discussioncomment-7102103)
 

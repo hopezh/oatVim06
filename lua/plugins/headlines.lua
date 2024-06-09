@@ -1,11 +1,15 @@
 return {
     "lukas-reineke/headlines.nvim",
 
-    dependencies = "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+        "nvim-treesitter/nvim-treesitter",
+        "folke/tokyonight.nvim",
+    },
 
     config = function()
         -- highlight color for headlines.nvim ----------------------------------
-        vim.cmd([[highlight Headline1 guibg=#999999 guifg=#000000]])
+        -- vim.cmd([[highlight Headline1 guibg=#999999 guifg=#000000]])
+        vim.cmd([[highlight Headline1 guibg=#999999 guifg=#0000ff]])
         vim.cmd([[highlight Headline2 guibg=#777777 guifg=#000000]])
         vim.cmd([[highlight Headline3 guibg=#555555 guifg=#000000]])
         vim.cmd([[highlight CodeBlock guibg=#252525]])
@@ -36,8 +40,10 @@ return {
                 quote_highlight = "Quote",
                 quote_string = "┃",
                 fat_headlines = true,
-                fat_headline_upper_string = "",
-                fat_headline_lower_string = "",
+                -- fat_headline_upper_string = "▃",
+                -- fat_headline_lower_string = "🬂",
+                fat_headline_upper_string = "-",
+                fat_headline_lower_string = "_",
             },
 
             markdown = {

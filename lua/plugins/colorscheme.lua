@@ -25,13 +25,13 @@ return {
     -- },
 
     {
-        "LazyVim/LazyVim",
-        opts = {
-            -- colorscheme = "gruvbox",
-            -- colorscheme = "catppuccin",
-            -- colorscheme = "kanagawa-dragon",
-            -- colorscheme = "nightfox",
-            -- colorscheme = "neofusion",
-        },
+        -- "LazyVim/LazyVim",
+        -- opts = {
+        --     -- colorscheme = "gruvbox",
+        --     -- colorscheme = "catppuccin",
+        --     -- colorscheme = "kanagawa-dragon",
+        --     -- colorscheme = "nightfox",
+        --     -- colorscheme = "neofusion",
+        -- },
     },
 }
