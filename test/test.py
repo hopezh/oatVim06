@@ -1,6 +1,7 @@
 from dash import Dash, html, dcc, callback, Output, Input
 import plotly.express as px
 import pandas as pd
+from util import addd
 
 # o: read csv file
 df = pd.read_csv(
@@ -12,6 +13,8 @@ a = 1
 b= 2
 c =3
 # fmt: on
+
+sum = addd(a, b)
 
 # init app
 app = Dash(__name__)
@@ -31,11 +34,6 @@ app.layout = html.Div(
 def update_graph(value):
     dff = df[df.country == value]
     return px.line(dff, x="year", y="pop")
-
-
-def add(a, b):
-    sum = a + b
-    return sum
 
 
 class Dog:
@@ -58,5 +56,5 @@ class Dog:
 
 
 # o: run app
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
