@@ -44,3 +44,7 @@ opt.fileformat = "unix"
 --  * enables nerd font icons
 -- Set to false to disable.
 vim.g.lazygit_config = false
+
+-- python provider -------------------------------------------------------------
+-- vim.g.python3_host_prog = "/Users/oatmini/anaconda3/envs/ai/bin/python3"
+-- vim.g.python3_host_prog = 0
