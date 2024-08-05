@@ -11,7 +11,7 @@ return {
 
     -- this taps into vim.ui.select and vim.ui.input
     -- and in doing so currently breaks renaming in otter.nvim
-    { "stevearc/dressing.nvim", enabled = false },
+    -- { "stevearc/dressing.nvim", enabled = false },
 
     {
         "quarto-dev/quarto-nvim",
