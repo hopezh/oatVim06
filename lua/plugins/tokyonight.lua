@@ -54,8 +54,8 @@ return {
                 bg = colors.bg_highlight, -- extend cursorline hl bg color to line number
                 italic = true,
             }
-            -- highlights.CursorLine = { bg = colors.bg_highlight } -- disable cursorline highlight
-            highlights.CursorLine = { bg = colors.none } -- disable cursorline highlight
+            highlights.CursorLine = { bg = colors.bg_highlight }
+            -- highlights.CursorLine = { bg = colors.none } -- disable cursorline highlight
         end,
     },
 }
