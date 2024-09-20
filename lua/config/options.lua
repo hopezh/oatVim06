@@ -32,7 +32,7 @@ vim.cmd("set noswapfile")
 
 -- specify file format ---------------------------------------------------------
 -- to remove the ^M character at the end of each line
-opt.fileformat = "unix"
+-- opt.fileformat = "unix"
 
 -- stop auto format on save ----------------------------------------------------
 -- vim.g.autoformat = false -- globally
